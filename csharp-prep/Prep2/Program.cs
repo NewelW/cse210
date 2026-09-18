@@ -8,6 +8,7 @@ class Program
         int gradePercentage = int.Parse(Console.ReadLine());
         string letterGrade = "";
         string positiveOrMinus = "";
+
         if (gradePercentage >= 90)
         {
             letterGrade = "A";
@@ -41,6 +42,7 @@ class Program
         {
             positiveOrMinus = "";
         }
+        
         Console.WriteLine($"You get an {letterGrade}{positiveOrMinus}!");
         if (gradePercentage >= 70)
         {
