@@ -4,6 +4,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep3 World!");
+        Random randomGenerator = new Random();
+        int magicNumber = randomGenerator.Next(1, 101);
+        Console.WriteLine("What is your guess? ");
+        int guess = int.Parse(Console.ReadLine());
+        while (guess != magicNumber)
+        {
+            if (guess > magicNumber)
+            {
+                Console.WriteLine("Lower");
+            }
+            else
+            {
+                Console.WriteLine("Higher");
+            }
+            Console.WriteLine("What is your guess? ");
+            guess = int.Parse(Console.ReadLine());
+        } 
+        Console.WriteLine("You guessed it! ");
     }
 }
