@@ -31,6 +31,7 @@ Please Select one of the options:
             }
             else if (response == "4") // Load & Display
             {
+                // Above and Beyond: This is inside LoadJournal, where it displays all the .txt files inside the CWD before the user types in a response to make it easier to respond to.
                 journal = journal.LoadJournal();
                 journal.DisplayEntries();
             }
