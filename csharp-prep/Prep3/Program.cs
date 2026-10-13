@@ -20,7 +20,7 @@ class Program
             }
             Console.Write("What is your guess? ");
             guess = int.Parse(Console.ReadLine());
-        } 
+        }
         Console.WriteLine("You guessed it! ");
     }
 }
