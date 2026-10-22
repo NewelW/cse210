@@ -9,6 +9,8 @@ class Reference
     {
         _book = book;
         _chapter = chapter;
+        _start = 0;
+        _end = 0;
     }
 
     public Reference(string book, int chapter, int start, int end)
