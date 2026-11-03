@@ -8,7 +8,7 @@ class Scripture
 
     public Scripture(string scriptureReference, bool showFirstLetter)
     {
-        List<string> scriptureList = new List<string>(scriptureReference.Split("\n"));
+        List<string> scriptureList = new List<string>(scriptureReference.Split(Environment.NewLine));
 
         scriptureList.RemoveAt(scriptureList.Count - 1);
         scriptureList.RemoveAll(str => str == "");
